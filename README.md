@@ -17,19 +17,39 @@ This project is a minimal setup to get React working with TypeScript and Vite. I
 
 ### Installation
 
-1. Clone the repository: `git clone https://github.com/ygohil2350/tr-abroad.git`
+1. Clone the repository:
 
-2. Navigate to the project directory: `cd tr-abroad`
+```
+git clone https://github.com/ygohil2350/tr-abroad.git
+```
 
-3. Install dependencies: `pnpm install`
+2. Navigate to the project directory:
+
+```
+cd tr-abroad
+```
+
+3. Install dependencies:
+
+```
+pnpm install
+```
 
 ### Running the Project
 
-To start the development server: `pnpm run dev`
+To start the development server:
+
+```
+pnpm run dev
+```
 
 ### Building the Project:
 
-To create a production build: `pnpm run build`
+To create a production build:
+
+```
+pnpm run build
+```
 
 ## ESLint Configuration
 
