@@ -20,16 +20,22 @@ const MenuButton = styled.button`
   }
 `;
 
-const Popup = styled.div`
-  position: absolute;
-  top: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: white;
-  border: 1px solid ${(props) => props.theme.primary};
-  padding: 1rem;
-  display: ${(props) => (props.show ? "block" : "none")};
-`;
+const Popup = (props: {
+  theme?: { primary?: string };
+  show: boolean;
+  children: string;
+}) => {
+  return styled.div`
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid ${props?.theme?.primary};
+    padding: 1rem;
+    display: ${props.show ? "block" : "none"};
+  `;
+};
 
 const Navbar: React.FC = () => {
   const [popup, setPopup] = useState<string | null>(null);
