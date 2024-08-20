@@ -2,6 +2,10 @@
 
 This project is a minimal setup to get React working with TypeScript and Vite. It includes HMR (Hot Module Replacement) and some ESLint rules.
 
+## Demo
+
+- Link: http://consultining-web.s3-website.eu-north-1.amazonaws.com/
+
 ## Features
 
 - React with TypeScript
@@ -57,6 +61,20 @@ The project uses ESLint with the following configuration:
 
 - Type-aware lint rules for better code quality
 - React plugin for linting React code
+
+## Sync with AWS
+
+Build The Project:
+
+```
+npm run build
+```
+
+Sync The Buket with local files:
+
+```
+aws s3 sync dist/ s3://consultining-web/
+```
 
 ## License
 
