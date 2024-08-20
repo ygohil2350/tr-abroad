@@ -1,10 +1,21 @@
-import React, { Fragment } from 'react'
+import { Fragment } from "react";
 
-import PropTypes from 'prop-types'
+import "./contact10.css";
 
-import './contact10.css'
+interface Contact10PropTypes {
+  content1?: JSX.Element;
+  location2ImageSrc: string;
+  location1ImageSrc: string;
+  location1Description?: JSX.Element;
+  location2ImageAlt: string;
+  heading1?: JSX.Element;
+  location2Description?: JSX.Element;
+  location1ImageAlt: string;
+  location1?: JSX.Element;
+  location2?: JSX.Element;
+}
 
-const Contact10 = (props) => {
+const Contact10 = (props: Contact10PropTypes) => {
   return (
     <div className="contact10-container1 thq-section-padding">
       <div className="contact10-max-width thq-section-max-width">
@@ -105,35 +116,22 @@ const Contact10 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Contact10.defaultProps = {
   content1: undefined,
   location2ImageSrc:
-    'https://images.unsplash.com/photo-1642697552227-ca21f326fe41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1642697552227-ca21f326fe41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
   location1ImageSrc:
-    'https://images.unsplash.com/photo-1660866838893-6c49de9ce095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1660866838893-6c49de9ce095?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
   location1Description: undefined,
-  location2ImageAlt: 'Branch Office Image',
+  location2ImageAlt: "Branch Office Image",
   heading1: undefined,
   location2Description: undefined,
-  location1ImageAlt: 'Head Office Image',
+  location1ImageAlt: "Head Office Image",
   location1: undefined,
   location2: undefined,
-}
+};
 
-Contact10.propTypes = {
-  content1: PropTypes.element,
-  location2ImageSrc: PropTypes.string,
-  location1ImageSrc: PropTypes.string,
-  location1Description: PropTypes.element,
-  location2ImageAlt: PropTypes.string,
-  heading1: PropTypes.element,
-  location2Description: PropTypes.element,
-  location1ImageAlt: PropTypes.string,
-  location1: PropTypes.element,
-  location2: PropTypes.element,
-}
-
-export default Contact10
+export default Contact10;

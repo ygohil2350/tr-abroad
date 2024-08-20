@@ -1,11 +1,62 @@
-import React, { useState, Fragment } from 'react'
+import { useState, Fragment } from "react";
+import "./pricing14.css";
 
-import PropTypes from 'prop-types'
+interface Pricing14PropTypes {
+  plan3Price: JSX.Element;
+  plan3Action: JSX.Element;
+  plan11: JSX.Element;
+  plan1Action: JSX.Element;
+  plan31: JSX.Element;
+  plan3Feature41: JSX.Element;
+  plan1Feature2: JSX.Element;
+  plan2Feature11: JSX.Element;
+  plan3Feature51: JSX.Element;
+  plan2Feature41: JSX.Element;
+  plan2Feature2: JSX.Element;
+  plan3Feature21: JSX.Element;
+  plan2Feature4: JSX.Element;
+  plan2Yearly: JSX.Element;
+  plan1Action1: JSX.Element;
+  plan2Action: JSX.Element;
+  plan3Feature1: JSX.Element;
+  plan2Feature3: JSX.Element;
+  plan1Price1: JSX.Element;
+  plan2: JSX.Element;
+  plan2Feature21: JSX.Element;
+  plan2Action1: JSX.Element;
+  plan3Feature2: JSX.Element;
+  content1: JSX.Element;
+  plan2Feature1: JSX.Element;
+  heading1: JSX.Element;
+  plan3Feature31: JSX.Element;
+  plan1: JSX.Element;
+  plan21: JSX.Element;
+  plan1Feature11: JSX.Element;
+  plan1Feature21: JSX.Element;
+  plan3Feature5: JSX.Element;
+  plan2Yearly1: JSX.Element;
+  plan2Price: JSX.Element;
+  plan3Yearly1: JSX.Element;
+  plan2Feature31: JSX.Element;
+  plan3Feature11: JSX.Element;
+  plan1Yearly1: JSX.Element;
+  plan2Price1: JSX.Element;
+  plan3Yearly: JSX.Element;
+  plan3Feature4: JSX.Element;
+  plan3Price1: JSX.Element;
+  plan1Feature31: JSX.Element;
+  plan1Feature3: JSX.Element;
+  plan1Yearly: JSX.Element;
+  plan1Feature1: JSX.Element;
+  plan3Feature3: JSX.Element;
+  content2: JSX.Element;
+  plan3Action1: JSX.Element;
+  plan1Price: JSX.Element;
+  plan3: JSX.Element;
+}
 
-import './pricing14.css'
-
-const Pricing14 = (props) => {
-  const [isMonthly, setIsMonthly] = useState(true)
+const Pricing14 = (props: Pricing14PropTypes) => {
+  const [isMonthly, setIsMonthly] = useState(true);
   return (
     <div className="pricing14-pricing23 thq-section-padding">
       <div className="pricing14-max-width thq-section-max-width">
@@ -37,14 +88,14 @@ const Pricing14 = (props) => {
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: ' ',
+                          __html: " ",
                         }}
                       />
                     </span>
                     <span>
                       <span
                         dangerouslySetInnerHTML={{
-                          __html: ' ',
+                          __html: " ",
                         }}
                       />
                     </span>
@@ -706,8 +757,8 @@ const Pricing14 = (props) => {
         )}
       </div>
     </div>
-  )
-}
+  );
+};
 
 Pricing14.defaultProps = {
   plan3Price: undefined,
@@ -761,60 +812,6 @@ Pricing14.defaultProps = {
   plan3Action1: undefined,
   plan1Price: undefined,
   plan3: undefined,
-}
+};
 
-Pricing14.propTypes = {
-  plan3Price: PropTypes.element,
-  plan3Action: PropTypes.element,
-  plan11: PropTypes.element,
-  plan1Action: PropTypes.element,
-  plan31: PropTypes.element,
-  plan3Feature41: PropTypes.element,
-  plan1Feature2: PropTypes.element,
-  plan2Feature11: PropTypes.element,
-  plan3Feature51: PropTypes.element,
-  plan2Feature41: PropTypes.element,
-  plan2Feature2: PropTypes.element,
-  plan3Feature21: PropTypes.element,
-  plan2Feature4: PropTypes.element,
-  plan2Yearly: PropTypes.element,
-  plan1Action1: PropTypes.element,
-  plan2Action: PropTypes.element,
-  plan3Feature1: PropTypes.element,
-  plan2Feature3: PropTypes.element,
-  plan1Price1: PropTypes.element,
-  plan2: PropTypes.element,
-  plan2Feature21: PropTypes.element,
-  plan2Action1: PropTypes.element,
-  plan3Feature2: PropTypes.element,
-  content1: PropTypes.element,
-  plan2Feature1: PropTypes.element,
-  heading1: PropTypes.element,
-  plan3Feature31: PropTypes.element,
-  plan1: PropTypes.element,
-  plan21: PropTypes.element,
-  plan1Feature11: PropTypes.element,
-  plan1Feature21: PropTypes.element,
-  plan3Feature5: PropTypes.element,
-  plan2Yearly1: PropTypes.element,
-  plan2Price: PropTypes.element,
-  plan3Yearly1: PropTypes.element,
-  plan2Feature31: PropTypes.element,
-  plan3Feature11: PropTypes.element,
-  plan1Yearly1: PropTypes.element,
-  plan2Price1: PropTypes.element,
-  plan3Yearly: PropTypes.element,
-  plan3Feature4: PropTypes.element,
-  plan3Price1: PropTypes.element,
-  plan1Feature31: PropTypes.element,
-  plan1Feature3: PropTypes.element,
-  plan1Yearly: PropTypes.element,
-  plan1Feature1: PropTypes.element,
-  plan3Feature3: PropTypes.element,
-  content2: PropTypes.element,
-  plan3Action1: PropTypes.element,
-  plan1Price: PropTypes.element,
-  plan3: PropTypes.element,
-}
-
-export default Pricing14
+export default Pricing14;

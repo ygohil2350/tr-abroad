@@ -643,50 +643,7 @@ const Home: React.FC = () => {
           </Fragment>
         }
       ></Contact10>
-      <Footer
-        link5={
-          <Fragment>
-            <span className="home-text214 thq-body-small">Blog</span>
-          </Fragment>
-        }
-        link3={
-          <Fragment>
-            <span className="home-text215 thq-body-small">About Us</span>
-          </Fragment>
-        }
-        link1={
-          <Fragment>
-            <span className="home-text216 thq-body-small">Home</span>
-          </Fragment>
-        }
-        termsLink={
-          <Fragment>
-            <span className="home-text217 thq-body-small">
-              Terms and Conditions
-            </span>
-          </Fragment>
-        }
-        link2={
-          <Fragment>
-            <span className="home-text218 thq-body-small">Services</span>
-          </Fragment>
-        }
-        link4={
-          <Fragment>
-            <span className="home-text219 thq-body-small">Contact Us</span>
-          </Fragment>
-        }
-        cookiesLink={
-          <Fragment>
-            <span className="home-text220 thq-body-small">Cookies Policy</span>
-          </Fragment>
-        }
-        privacyLink={
-          <Fragment>
-            <span className="home-text221 thq-body-small">Privacy Policy</span>
-          </Fragment>
-        }
-      ></Footer>
+      <Footer />
     </div>
   );
 };

@@ -1,8 +1,31 @@
-import Script from "dangerous-html/react";
-import PropTypes from "prop-types";
 import "./mainPage.css";
-
-const MainPage = (props) => {
+interface MainPagePropType {
+  image3Src: string;
+  image8Alt: string;
+  image2Src: string;
+  image6Alt: string;
+  image11Src: string;
+  image5Alt: string;
+  image1Alt: string;
+  image7Src: string;
+  image7Alt: string;
+  image12Alt: string;
+  image2Alt: string;
+  image6Src: string;
+  image12Src: string;
+  image3Alt: string;
+  image9Src: string;
+  image11Alt: string;
+  image8Src: string;
+  image5Src: string;
+  image4Src: string;
+  image10Alt: string;
+  image4Alt: string;
+  image10Src: string;
+  image9Alt: string;
+  image1Src: string;
+}
+const MainPage = (props: MainPagePropType) => {
   return (
     <div className="main-page-header78">
       <div className="main-page-column thq-section-padding thq-section-max-width">
@@ -173,30 +196,27 @@ const MainPage = (props) => {
         </div>
       </div>
       <div>
-        <div className="main-page-container2">
-          <Script
-            html={`<style>
-  @keyframes scroll-x {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(calc(-100% - 16px));
-    }
-  }
+        <style>
+          {`
+        @keyframes scroll-x {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(calc(-100% - 16px));
+          }
+        }
 
-  @keyframes scroll-y {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(calc(-100% - 16px));
-    }
-  }
-</style>
-`}
-          ></Script>
-        </div>
+        @keyframes scroll-y {
+          from {
+            transform: translateY(0);
+          }
+          to {
+            transform: translateY(calc(-100% - 16px));
+          }
+        }
+      `}
+        </style>
       </div>
     </div>
   );
@@ -239,33 +259,6 @@ MainPage.defaultProps = {
   image9Alt: "Hero Image",
   image1Src:
     "https://images.unsplash.com/photo-1558203367-342c5fbd1437?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2OHw&ixlib=rb-4.0.3&q=80&w=1080",
-};
-
-MainPage.propTypes = {
-  image3Src: PropTypes.string,
-  image8Alt: PropTypes.string,
-  image2Src: PropTypes.string,
-  image6Alt: PropTypes.string,
-  image11Src: PropTypes.string,
-  image5Alt: PropTypes.string,
-  image1Alt: PropTypes.string,
-  image7Src: PropTypes.string,
-  image7Alt: PropTypes.string,
-  image12Alt: PropTypes.string,
-  image2Alt: PropTypes.string,
-  image6Src: PropTypes.string,
-  image12Src: PropTypes.string,
-  image3Alt: PropTypes.string,
-  image9Src: PropTypes.string,
-  image11Alt: PropTypes.string,
-  image8Src: PropTypes.string,
-  image5Src: PropTypes.string,
-  image4Src: PropTypes.string,
-  image10Alt: PropTypes.string,
-  image4Alt: PropTypes.string,
-  image10Src: PropTypes.string,
-  image9Alt: PropTypes.string,
-  image1Src: PropTypes.string,
 };
 
 export default MainPage;

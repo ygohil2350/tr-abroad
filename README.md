@@ -58,6 +58,20 @@ The project uses ESLint with the following configuration:
 - Type-aware lint rules for better code quality
 - React plugin for linting React code
 
+## Sync with AWS
+
+Build The Project:
+
+```
+npm run build
+```
+
+Sync The Buket with local files:
+
+```
+aws s3 sync dist/ s3://consultining-web/
+```
+
 ## License
 
 This project is licensed under the MIT License.

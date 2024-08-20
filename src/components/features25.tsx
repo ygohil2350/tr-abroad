@@ -1,11 +1,22 @@
-import React, { useState, Fragment } from 'react'
+import { useState, Fragment } from "react";
+import "./features25.css";
 
-import PropTypes from 'prop-types'
-
-import './features25.css'
-
-const Features25 = (props) => {
-  const [activeTab, setActiveTab] = useState(0)
+interface Features25PropTypes {
+  feature3Description: JSX.Element;
+  feature1ImgAlt: string;
+  feature1Description: JSX.Element;
+  feature3ImgAlt: string;
+  feature2Title: JSX.Element;
+  feature1Title: JSX.Element;
+  feature1ImgSrc: string;
+  feature3ImgSrc: string;
+  feature2Description: JSX.Element;
+  feature3Title: JSX.Element;
+  feature2ImgAlt: string;
+  feature2ImgSrc: string;
+}
+const Features25 = (props: Features25PropTypes) => {
+  const [activeTab, setActiveTab] = useState(0);
   return (
     <div className="thq-section-padding">
       <div className="features25-container2 thq-section-max-width">
@@ -125,40 +136,25 @@ const Features25 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Features25.defaultProps = {
   feature3Description: undefined,
-  feature1ImgAlt: 'Personalized Guidance Image Alt Text',
+  feature1ImgAlt: "Personalized Guidance Image Alt Text",
   feature1Description: undefined,
-  feature3ImgAlt: 'Expert Advice Image Alt Text',
+  feature3ImgAlt: "Expert Advice Image Alt Text",
   feature2Title: undefined,
   feature1Title: undefined,
   feature1ImgSrc:
-    'https://images.unsplash.com/photo-1694587973344-3d9c5e5fe1be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1694587973344-3d9c5e5fe1be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
   feature3ImgSrc:
-    'https://images.unsplash.com/photo-1644064954035-8a0dc28d5b85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NHw&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1644064954035-8a0dc28d5b85?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NHw&ixlib=rb-4.0.3&q=80&w=1080",
   feature2Description: undefined,
   feature3Title: undefined,
-  feature2ImgAlt: 'Comprehensive Support Image Alt Text',
+  feature2ImgAlt: "Comprehensive Support Image Alt Text",
   feature2ImgSrc:
-    'https://images.unsplash.com/photo-1706986260383-eca33dd1bc1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NXw&ixlib=rb-4.0.3&q=80&w=1080',
-}
+    "https://images.unsplash.com/photo-1706986260383-eca33dd1bc1a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NXw&ixlib=rb-4.0.3&q=80&w=1080",
+};
 
-Features25.propTypes = {
-  feature3Description: PropTypes.element,
-  feature1ImgAlt: PropTypes.string,
-  feature1Description: PropTypes.element,
-  feature3ImgAlt: PropTypes.string,
-  feature2Title: PropTypes.element,
-  feature1Title: PropTypes.element,
-  feature1ImgSrc: PropTypes.string,
-  feature3ImgSrc: PropTypes.string,
-  feature2Description: PropTypes.element,
-  feature3Title: PropTypes.element,
-  feature2ImgAlt: PropTypes.string,
-  feature2ImgSrc: PropTypes.string,
-}
-
-export default Features25
+export default Features25;

@@ -7,14 +7,16 @@
     "start": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
+    "check": "pnpm run lint && pnpm run type",
+    "type": "tsc --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
     "@emotion/styled": "^11.13.0",
     "@mui/material": "^5.16.7",
+    "@types/react-helmet": "^6.1.11",
     "@types/react-router-dom": "^5.3.3",
-    "dangerous-html": "^0.1.13",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-dom": "^17.0.2",

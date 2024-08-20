@@ -1,10 +1,18 @@
-import React, { Fragment } from 'react'
+import { Fragment } from "react";
+import "./steps2.css";
 
-import PropTypes from 'prop-types'
+interface Steps2PropTypes {
+  step1Description: JSX.Element;
+  step3Description: JSX.Element;
+  step2Title: JSX.Element;
+  step2Description: JSX.Element;
+  step1Title: JSX.Element;
+  step3Title: JSX.Element;
+  step4Description: JSX.Element;
+  step4Title: JSX.Element;
+}
 
-import './steps2.css'
-
-const Steps2 = (props) => {
+const Steps2 = (props: Steps2PropTypes) => {
   return (
     <div className="steps2-container1 thq-section-padding">
       <div className="steps2-max-width thq-section-max-width">
@@ -118,8 +126,8 @@ const Steps2 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Steps2.defaultProps = {
   step1Description: undefined,
@@ -130,17 +138,6 @@ Steps2.defaultProps = {
   step3Title: undefined,
   step4Description: undefined,
   step4Title: undefined,
-}
+};
 
-Steps2.propTypes = {
-  step1Description: PropTypes.element,
-  step3Description: PropTypes.element,
-  step2Title: PropTypes.element,
-  step2Description: PropTypes.element,
-  step1Title: PropTypes.element,
-  step3Title: PropTypes.element,
-  step4Description: PropTypes.element,
-  step4Title: PropTypes.element,
-}
-
-export default Steps2
+export default Steps2;

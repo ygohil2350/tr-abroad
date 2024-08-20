@@ -1,10 +1,31 @@
-import React, { Fragment } from 'react'
+import { Fragment } from "react";
+import "./testimonial17.css";
 
-import PropTypes from 'prop-types'
-
-import './testimonial17.css'
-
-const Testimonial17 = (props) => {
+interface Testimonial17propTypes {
+  author2Position: JSX.Element;
+  author1Position: JSX.Element;
+  author3Alt: string;
+  author1Name: JSX.Element;
+  author1Src: string;
+  author3Name: JSX.Element;
+  review2: JSX.Element;
+  author2Name: JSX.Element;
+  author4Position: JSX.Element;
+  author4Name: JSX.Element;
+  author4Src: string;
+  author1Alt: string;
+  author2Src: string;
+  author3Src: string;
+  author2Alt: string;
+  author4Alt: string;
+  content1: JSX.Element;
+  author3Position: JSX.Element;
+  review1: JSX.Element;
+  heading1: JSX.Element;
+  review3: JSX.Element;
+  review4: JSX.Element;
+}
+const Testimonial17 = (props: Testimonial17propTypes) => {
   return (
     <div className="thq-section-padding">
       <div className="testimonial17-max-width thq-section-max-width">
@@ -225,61 +246,36 @@ const Testimonial17 = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Testimonial17.defaultProps = {
   author2Position: undefined,
   author1Position: undefined,
-  author3Alt: 'Image of Emily Johnson',
+  author3Alt: "Image of Emily Johnson",
   author1Name: undefined,
   author1Src:
-    'https://images.unsplash.com/photo-1541190990694-4a612732721c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1541190990694-4a612732721c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
   author3Name: undefined,
   review2: undefined,
   author2Name: undefined,
   author4Position: undefined,
   author4Name: undefined,
   author4Src:
-    'https://images.unsplash.com/photo-1539614474468-f423a2d2270c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
-  author1Alt: 'Image of John Doe',
+    "https://images.unsplash.com/photo-1539614474468-f423a2d2270c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
+  author1Alt: "Image of John Doe",
   author2Src:
-    'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080',
+    "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2M3w&ixlib=rb-4.0.3&q=80&w=1080",
   author3Src:
-    'https://images.unsplash.com/photo-1632377082368-66155ad702d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NHw&ixlib=rb-4.0.3&q=80&w=1080',
-  author2Alt: 'Image of Jane Smith',
-  author4Alt: 'Image of Michael Brown',
+    "https://images.unsplash.com/photo-1632377082368-66155ad702d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTcyNDA1NzQ2NHw&ixlib=rb-4.0.3&q=80&w=1080",
+  author2Alt: "Image of Jane Smith",
+  author4Alt: "Image of Michael Brown",
   content1: undefined,
   author3Position: undefined,
   review1: undefined,
   heading1: undefined,
   review3: undefined,
   review4: undefined,
-}
+};
 
-Testimonial17.propTypes = {
-  author2Position: PropTypes.element,
-  author1Position: PropTypes.element,
-  author3Alt: PropTypes.string,
-  author1Name: PropTypes.element,
-  author1Src: PropTypes.string,
-  author3Name: PropTypes.element,
-  review2: PropTypes.element,
-  author2Name: PropTypes.element,
-  author4Position: PropTypes.element,
-  author4Name: PropTypes.element,
-  author4Src: PropTypes.string,
-  author1Alt: PropTypes.string,
-  author2Src: PropTypes.string,
-  author3Src: PropTypes.string,
-  author2Alt: PropTypes.string,
-  author4Alt: PropTypes.string,
-  content1: PropTypes.element,
-  author3Position: PropTypes.element,
-  review1: PropTypes.element,
-  heading1: PropTypes.element,
-  review3: PropTypes.element,
-  review4: PropTypes.element,
-}
-
-export default Testimonial17
+export default Testimonial17;
