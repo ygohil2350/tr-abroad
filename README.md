@@ -4,7 +4,7 @@ This project is a minimal setup to get React working with TypeScript and Vite. I
 
 ## Demo
 
-- Link:http://consultining-web.s3-website.eu-north-1.amazonaws.com/(http://consultining-web.s3-website.eu-north-1.amazonaws.com/)
+- Link: http://consultining-web.s3-website.eu-north-1.amazonaws.com/
 
 ## Features
 
